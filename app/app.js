@@ -12,9 +12,12 @@ app.config(function($routeProvider) {
 
     }).when("/newdog",{
 
-    }).when("/galerry",{
+    }).when("/gallery",{
+        templateUrl: "app/gallery/gallery.html"
 
     }).when("/navbar",{
 
-    });
+    }).when("/list",{
+        templateUrl: "app/list/list.html"
+    })
 })
