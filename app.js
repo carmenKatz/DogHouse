@@ -8,14 +8,12 @@ app.config(function($routeProvider) {
         templateUrl: "app/login/login.html"
 
     }).when("/signup",{
-       
+        templateUrl: "app/signup/signup.html"
 
     }).when("/newdog",{
 
     }).when("/gallery",{
         templateUrl: "app/gallery/gallery.html"
-
-    }).when("/navbar",{
 
     }).when("/list",{
         templateUrl: "app/list/list.html"
