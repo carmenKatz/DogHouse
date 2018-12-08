@@ -1,3 +1,5 @@
 app.controller("navbarCtrl", function($scope){
-    $scope.test = "blabla";
+    $scope.isUserLoggedin = function(){
+        return true;
+    }
 })
