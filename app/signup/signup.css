@@ -14,11 +14,20 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .icon {
-    padding: 10px;
-    background: rgb(77, 225, 252);
+    padding: 15px;
+    background: rgb(81, 180, 147);
     color: white;
     min-width: 50px;
     text-align: center;
+}
+
+.homeIcon {
+    padding: 10px;
+    background: rgb(81, 180, 147);
+    color: rgb(26, 48, 29);
+    min-width:50px;
+    text-align: center;
+    size: 9x;
 }
 
 .input-field {
@@ -28,12 +37,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .input-field:focus {
-    border: 2px solid rgb(77, 225, 252);
+    border: 2px solid rgb(81, 180, 147);
 }
 
 /* Set a style for the submit button */
 .btn {
-    background-color: rgb(77, 225, 252);
+    background-color: rgb(81, 180, 147);
     color: white;
     padding: 15px 20px;
     border: none;
