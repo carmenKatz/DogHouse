@@ -21,5 +21,74 @@
 
         }
 
-    ]
+    ],
+
+    "tenant":[
+     
+
+        {
+         "id": 1,
+         "tenantName": "ג'ינג'ר",
+         "tenamtType": "dog",
+         "tenantAge": "2",
+         "tenantSize": "small",
+         "tenantPic": "http://res.freestockphotos.biz/pictures/14/14663-a-small-dog-on-a-leash-pv.jpg",
+         "tenantDes": "blablablabla"
+             },
+
+         {
+            "id": 1,
+            "tenantName":"מיצי",
+            "tenamtType": "cat",
+            "tenantAge": ".5",
+            "tenantSize": "normal",
+            "tenantPic": "http://starkovtattoo.spb.ru/images/100/DSC100105908.jpg"   ,
+            "tenantDes": "blablablabla"
+                            },
+        {
+            "id": 1,
+            "tenantName":"גוצ'ה",
+            "tenamtType": "parrot",
+            "tenantAge": "5",
+            "tenantSize": "small",
+            "tenantPic":"http://4.bp.blogspot.com/-d2wwU4UsIhk/T7BARsRU_9I/AAAAAAAAAiU/XnBW7QO6tWQ/s1600/scale.JPG",
+            "tenantDes": "blablablabla"
+        },
+
+
+
+
+
+       
+           
+    
+            {
+             "id": 2,
+             "tenantName": "ג'ימי",
+             "tenamtType": "dog",
+             "tenantAge": "7",
+             "tenantSize": "big",
+             "tenantPic":"https://thumbs.dreamstime.com/z/blue-great-dane-posing-big-dog-watching-listening-63996118.jpg",
+             "tenantDes": "blablablabla"
+                 },
+    
+             {
+                "id": 2,
+                "tenantName":"פיצי",
+                "tenamtType": "cat",
+                "tenantAge": "4",
+                "tenantSize": "normal",
+                "tenantPic":"https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg?cs=srgb&dl=adorable-animal-blur-326875.jpg&fm=jpg",
+                "tenantDes": "blablablabla"
+                                },
+            {
+                "id": 2,
+                "tenantName":"פליקס",
+                "tenamtType": "parrot",
+               "tenantAge": "5",
+                "tenantSize": "big",
+                "tenantPic": "https://freerangestock.com/sample/22484/white-parrot.jpg",
+                "tenantDes": "blablablabla"
+            }
+  ]
 }

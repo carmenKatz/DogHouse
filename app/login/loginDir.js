@@ -1,6 +1,7 @@
-app.directive("logIn", function(){
+app.directive("shelterlogin", function(){
     return {
-        templateUrl: "app/login/login.html"
+        templateUrl: "app/login/login.html",
+        controller: "loginCtrl"
         
     }
 })

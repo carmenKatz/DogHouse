@@ -1,4 +1,14 @@
+
+ 
+
+
+
+
 app.controller("loginCtrl", function($scope, $location, user) {
+
+
+
+   
     
     $scope.email = "jane@jane.co.il";
     $scope.pwd = "1111";
@@ -10,7 +20,7 @@ app.controller("loginCtrl", function($scope, $location, user) {
 
         user.login($scope.email, $scope.pwd).then(function() {
             // success login
-            $location.path("/navbar")
+            $location.path("/gallery")
         }, function(error) {
             // failed login
             $scope.invalidLogin = true;
