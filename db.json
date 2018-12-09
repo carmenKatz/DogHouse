@@ -1,0 +1,25 @@
+{
+    "mgr": [
+        {
+            "id": 1,
+            "usrlnm": "Joe",
+            "usrfnm": "Jane",
+            "adr" : "Hahistradut 120 Haifa",
+            "telefone": "0504635977",
+            "email": "jane@jane.co.il",
+            "psw": "1111"
+
+        },
+        {
+            "id": 2,
+            "usrlnm": "Doe",
+            "usrfnm": "John",
+            "adr" : "Shaked 15 Nesher",
+            "telefone": "0779624360",
+            "email": "john@john.co.il",
+            "psw": "1111"
+
+        }
+
+    ]
+}

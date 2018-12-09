@@ -1,5 +1,10 @@
 app.controller("navbarCtrl", function($scope){
     $scope.isUserLoggedin = function(){
-        return true;
+        return false;
     }
-})
+
+    $scope.logout = function() {
+        user.logout();
+        $location.path("/");
+    }
+});
