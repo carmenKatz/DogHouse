@@ -1,6 +1,6 @@
 app.controller("navbarCtrl", function($scope){
     $scope.isUserLoggedin = function(){
-        return false;
+        return true;
     }
 
     $scope.logout = function() {
