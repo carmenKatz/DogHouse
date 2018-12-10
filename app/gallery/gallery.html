@@ -1,1 +1,22 @@
-<h1>animals</h1>
+
+
+<navbar-shelter></navbar-shelter>
+
+
+
+
+<div class="container mt-5">
+    <h1>דיירי המקום</h1>
+  
+  <div class="row">
+      <div class="col-sm-6 col-md-4 my-2" ng-repeat="tenant in tenants">
+  <div class="card" style="width:400px">
+      <img class="card-img-top" src="#" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title">{{"tenant.name"}}</h4>
+        <p class="card-text">{{"tenant.des"}}</p>
+        <a href="#" class="btn btn-primary" ng-click="delete()" ng-show="isUserLoggedin()">מחיקה</a>
+      </div>
+    </div>
+    </div>
+    </div>

@@ -4,7 +4,7 @@
 
 
 
-app.controller("loginCtrl", function($scope, $location, user) {
+app.controller("loginCtrl", function($scope, $location, menager) {
 
 
 
@@ -18,7 +18,7 @@ app.controller("loginCtrl", function($scope, $location, user) {
     $scope.login = function() {
         $scope.invalidLogin = false;
 
-        user.login($scope.email, $scope.pwd).then(function() {
+        menager.login($scope.email, $scope.pwd).then(function() {
             // success login
             $location.path("/gallery")
         }, function(error) {

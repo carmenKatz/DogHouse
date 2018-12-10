@@ -1,23 +1,18 @@
-app.factory("mrg", function($q, $http) {
+app.factory("menager", function($q, $http) {
 
-    $scope.ready(function () {
-        $("#myBtn").click(function () {
-          $("#myModal").modal();
-        });
-      });
     
 
-    var activeMrg = null;
+    var activeMenager = null;
    
 
-    function mrg(userMrg) {
-        this.id = userMrg.id;
-        this.fname = userMrg.usrfnm;
-        this.lname = userMrg.usrlnm;
-        this.adr = userMrg.adr;
-        this.telefon = userMrg.telefon;
-        this.email = userMrg.email;
-        this.pwd = userMrg.pwd;
+    function menager(plainMenager) {
+        this.id = plainMenager.id;
+        this.fname = plainMenager.usrfnm;
+        this.lname = plainMenager.usrlnm;
+        this.adr = plainMenager.adr;
+        this.telefon = plainMenager.telefon;
+        this.email = plainMenager.email;
+        this.pwd = plainMenager.pwd;
     }
 
     // "id": 2,
@@ -33,13 +28,14 @@ app.factory("mrg", function($q, $http) {
     function login(email, pwd) {
         var async = $q.defer();
 
-        var loginURL = "http://my-json-server.typicode.com/carmenKatz/DogHouse/users?email=" +
+        var loginURL = "http://my-json-server.typicode.com/carmenKatz/DogHouse/menagers?email=" +
             email + "&pwd=" + pwd;
+            
         $http.get(loginURL).then(function(response) {
             if (response.data.length > 0) {
                 // success login
-                activeMrg = new Mrg(response.data[0]);
-                async.resolve(activeMrg);
+                activeMenager = new menager(response.data[0]);
+                async.resolve(activeMenager);
             } else {
                 // invalid email or password
                 async.reject("invalid email or password")
@@ -52,21 +48,21 @@ app.factory("mrg", function($q, $http) {
     }
 
     function isLoggedIn() {
-        return activeMrg ? true : false;
+        return activeMenager ? true : false;
     }
 
     function logout() {
-        activeMrg = null;
+        activeMenager = null;
     }
 
-    function getActiveUser() {
-        return activeMrg;
+    function getActiveMenager() {
+        return activeMenager;
     }
 
     return {
         login: login,
         isLoggedIn: isLoggedIn,
         logout: logout,
-        getActiveMrg: getActiveMrg
+        getActiveMenager: getActiveMenager
     }
 })

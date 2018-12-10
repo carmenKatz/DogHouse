@@ -1,6 +1,6 @@
 app.directive("animalGallery", function(){
     return {
-        templateUrl: "app/gallery/gallery.html"
-        
+        templateUrl: "app/gallery/gallery.html",
+        controller: "galleryCtrl"
     }
 })

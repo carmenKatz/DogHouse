@@ -7,9 +7,9 @@ app.controller("tenantsGalleryCtrl", function($scope, tenant, mrg, $location) {
         return;
     }
 
-    // tenant.getActiveUserRecipes().then(function (recipes) {
-    //     $scope.recipes = recipes;
-    // }, function(error) {
+    recipes.getActiveUserRecipes().then(function (recipes) {
+        $scope.recipes = recipes;
+    }, function(error) {
         
-    // })
+    })
 })

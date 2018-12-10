@@ -1,5 +1,6 @@
 {
-    "mgr": [
+    
+    "menagers": [
         {
             "id": 1,
             "usrlnm": "Joe",
@@ -23,36 +24,39 @@
 
     ],
 
-    "tenant":[
+    "tenants":[
      
 
         {
          "id": 1,
-         "tenantName": "ג'ינג'ר",
-         "tenamtType": "dog",
-         "tenantAge": "2",
-         "tenantSize": "small",
-         "tenantPic": "http://res.freestockphotos.biz/pictures/14/14663-a-small-dog-on-a-leash-pv.jpg",
-         "tenantDes": "blablablabla"
+         "name": "ג'ינג'ר",
+         "zan": "dog",
+         "age": "2",
+         "asize": "small",
+         "pic": "http://res.freestockphotos.biz/pictures/14/14663-a-small-dog-on-a-leash-pv.jpg",
+         "des": "blablablabla",
+         "menagerId": 1
              },
 
          {
             "id": 1,
-            "tenantName":"מיצי",
-            "tenamtType": "cat",
-            "tenantAge": ".5",
-            "tenantSize": "normal",
-            "tenantPic": "http://starkovtattoo.spb.ru/images/100/DSC100105908.jpg"   ,
-            "tenantDes": "blablablabla"
+            "name":"מיצי",
+            "zan": "cat",
+            "age": ".5",
+            "asize": "normal",
+            "pic": "http://starkovtattoo.spb.ru/images/100/DSC100105908.jpg"   ,
+            "des": "blablablabla",
+            "menagerId": 1
                             },
         {
             "id": 1,
-            "tenantName":"גוצ'ה",
-            "tenamtType": "parrot",
-            "tenantAge": "5",
-            "tenantSize": "small",
-            "tenantPic":"http://4.bp.blogspot.com/-d2wwU4UsIhk/T7BARsRU_9I/AAAAAAAAAiU/XnBW7QO6tWQ/s1600/scale.JPG",
-            "tenantDes": "blablablabla"
+            "name":"גוצ'ה",
+            "zan": "parrot",
+            "age": "5",
+            "asize": "small",
+            "pic":"http://4.bp.blogspot.com/-d2wwU4UsIhk/T7BARsRU_9I/AAAAAAAAAiU/XnBW7QO6tWQ/s1600/scale.JPG",
+            "des": "blablablabla",
+            "menagerId": 1
         },
 
 
@@ -64,31 +68,34 @@
     
             {
              "id": 2,
-             "tenantName": "ג'ימי",
-             "tenamtType": "dog",
-             "tenantAge": "7",
-             "tenantSize": "big",
-             "tenantPic":"https://thumbs.dreamstime.com/z/blue-great-dane-posing-big-dog-watching-listening-63996118.jpg",
-             "tenantDes": "blablablabla"
+             "name": "ג'ימי",
+             "zan": "dog",
+             "age": "7",
+             "asize": "big",
+             "pic":"https://thumbs.dreamstime.com/z/blue-great-dane-posing-big-dog-watching-listening-63996118.jpg",
+             "des": "blablablabla",
+             "menagerId": 2
                  },
     
              {
                 "id": 2,
-                "tenantName":"פיצי",
-                "tenamtType": "cat",
-                "tenantAge": "4",
-                "tenantSize": "normal",
-                "tenantPic":"https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg?cs=srgb&dl=adorable-animal-blur-326875.jpg&fm=jpg",
-                "tenantDes": "blablablabla"
+                "name":"פיצי",
+                "zan": "cat",
+                "age": "4",
+                "asize": "normal",
+                "pic":"https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg?cs=srgb&dl=adorable-animal-blur-326875.jpg&fm=jpg",
+                "des": "blablablabla",
+                "menagerId" : 2
                                 },
             {
                 "id": 2,
-                "tenantName":"פליקס",
-                "tenamtType": "parrot",
-               "tenantAge": "5",
-                "tenantSize": "big",
-                "tenantPic": "https://freerangestock.com/sample/22484/white-parrot.jpg",
-                "tenantDes": "blablablabla"
+                "name":"פליקס",
+                "zan": "parrot",
+               "age": "5",
+                "asize": "big",
+                "pic": "https://freerangestock.com/sample/22484/white-parrot.jpg",
+                "des": "blablablabla",
+                "menagerId" : 2
             }
   ]
 }
