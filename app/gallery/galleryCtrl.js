@@ -1,14 +1,14 @@
-app.controller("tenantsGalleryCtrl", function($scope, tenant, mrg, $location) {
+app.controller("galleryCtrl", function($scope, tenant, menager, $location) {
 
     // Checking if the user is currently logged in,
     // if not redirecting to the home page
-    if (!mrg.isLoggedIn()) {
+    if (!menager.isLoggedIn()) {
         $location.path("/");
         return;
     }
 
-    recipes.getActiveUserRecipes().then(function (recipes) {
-        $scope.recipes = recipes;
+    tenants.getActiveMenagerTenants().then(function (tenants) {
+        $scope.tenants = tenants;
     }, function(error) {
         
     })
