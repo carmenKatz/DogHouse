@@ -20,6 +20,14 @@ app.controller("loginCtrl", function($scope, $location, menager) {
 
         menager.login($scope.email, $scope.pwd).then(function() {
             // success login
+
+
+            $("#myModal").modal("hide");
+            $("body").removeClass("modal-open");
+            $(".modal-backdrop").remove();
+
+
+            
             $location.path("/gallery")
         }, function(error) {
             // failed login

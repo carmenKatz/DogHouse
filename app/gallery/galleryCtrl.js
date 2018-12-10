@@ -7,7 +7,7 @@ app.controller("galleryCtrl", function($scope, tenant, menager, $location) {
         return;
     }
 
-    tenants.getActiveMenagerTenants().then(function (tenants) {
+    tenant.getActiveMenagerTenant().then(function (tenants) {
         $scope.tenants = tenants;
     }, function(error) {
         

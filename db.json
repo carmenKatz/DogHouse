@@ -33,7 +33,7 @@
          "zan": "dog",
          "age": "2",
          "asize": "small",
-         "pic": "http://res.freestockphotos.biz/pictures/14/14663-a-small-dog-on-a-leash-pv.jpg",
+         "picUrl": "http://res.freestockphotos.biz/pictures/14/14663-a-small-dog-on-a-leash-pv.jpg",
          "des": "blablablabla",
          "menagerId": 1
              },
@@ -44,7 +44,7 @@
             "zan": "cat",
             "age": ".5",
             "asize": "normal",
-            "pic": "http://starkovtattoo.spb.ru/images/100/DSC100105908.jpg"   ,
+            "picUrl": "http://starkovtattoo.spb.ru/images/100/DSC100105908.jpg"   ,
             "des": "blablablabla",
             "menagerId": 1
                             },
@@ -54,7 +54,7 @@
             "zan": "parrot",
             "age": "5",
             "asize": "small",
-            "pic":"http://4.bp.blogspot.com/-d2wwU4UsIhk/T7BARsRU_9I/AAAAAAAAAiU/XnBW7QO6tWQ/s1600/scale.JPG",
+            "picUrl":"http://4.bp.blogspot.com/-d2wwU4UsIhk/T7BARsRU_9I/AAAAAAAAAiU/XnBW7QO6tWQ/s1600/scale.JPG",
             "des": "blablablabla",
             "menagerId": 1
         },
@@ -72,7 +72,7 @@
              "zan": "dog",
              "age": "7",
              "asize": "big",
-             "pic":"https://thumbs.dreamstime.com/z/blue-great-dane-posing-big-dog-watching-listening-63996118.jpg",
+             "picUrl":"https://thumbs.dreamstime.com/z/blue-great-dane-posing-big-dog-watching-listening-63996118.jpg",
              "des": "blablablabla",
              "menagerId": 2
                  },
@@ -83,7 +83,7 @@
                 "zan": "cat",
                 "age": "4",
                 "asize": "normal",
-                "pic":"https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg?cs=srgb&dl=adorable-animal-blur-326875.jpg&fm=jpg",
+                "picUrl":"https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg?cs=srgb&dl=adorable-animal-blur-326875.jpg&fm=jpg",
                 "des": "blablablabla",
                 "menagerId" : 2
                                 },
@@ -93,7 +93,7 @@
                 "zan": "parrot",
                "age": "5",
                 "asize": "big",
-                "pic": "https://freerangestock.com/sample/22484/white-parrot.jpg",
+                "picUrl": "https://freerangestock.com/sample/22484/white-parrot.jpg",
                 "des": "blablablabla",
                 "menagerId" : 2
             }
