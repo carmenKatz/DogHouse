@@ -1,10 +1,11 @@
-app.controller("navbarCtrl", function($scope){
-    $scope.isUserLoggedin = function(){
-        return false;
+app.controller("navbarCtrl", function($scope, menager, $location){
+    $scope.isMenagerLoggedin = function(){
+        return menager.isLoggedIn();
+        // return true;
     }
 
     $scope.logout = function() {
-        user.logout();
+        menager.logout();
         $location.path("/");
     }
 });

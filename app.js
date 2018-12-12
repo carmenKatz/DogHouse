@@ -12,7 +12,12 @@ app.config(function($routeProvider) {
     }).when("/gallery",{
         templateUrl: "app/gallery/gallery.html",
         controller: "galleryCtrl"
+        
     }).when("/list",{
         templateUrl: "app/list/list.html"
+
+    }).when("/new" , {
+        templateUrl: "app/gallery/newTenant.html",
+        controller: "newTenantCtrl"
     })
 })

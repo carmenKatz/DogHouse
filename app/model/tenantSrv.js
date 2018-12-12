@@ -10,7 +10,7 @@ app.factory("tenant", function($q, $http, menager) {
         this.asize = plainTenant.asize;
         this.picUrl = plainTenant.picUrl;
         this.des = plainTenant.des;
-        this.menagerId = plainTenant.userId;
+        this.menagerId = plainTenant.menagerId;
     }
 
 
@@ -37,7 +37,7 @@ app.factory("tenant", function($q, $http, menager) {
             async.resolve(tenant[menagerId]);
         } else {
             tenants[menagerId] = [];
-            var getTenantURL = "http://my-json-server.typicode.com/carmenKatz/DogHouse/tenants?userId=" + menagerId;
+            var getTenantURL = "http://my-json-server.typicode.com/carmenKatz/DogHouse/tenants?menagerId=" + menagerId;
             
             $http.get(getTenantURL).then(function(response) {
                 for (var i = 0; i < response.data.length; i++) {
@@ -55,7 +55,7 @@ app.factory("tenant", function($q, $http, menager) {
     }
 
 
-    // function createRecipe(name, description, ingredients, steps, imgUrl) {
+    // function addTenant(name, description, ingredients, steps, imgUrl) {
     //     var async = $q.defer();
 
     //     var userId = user.getActiveUser().id;

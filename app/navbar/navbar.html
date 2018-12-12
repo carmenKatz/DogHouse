@@ -12,21 +12,21 @@
     <ul class="navbar-nav">
       <li class="nav-item">
         <!-- <a href="#myModal" data-toggle="modal" class="nav-link" id="MainNavHelp">כניסה</a> -->
-        <a class="navbar-brand spacer" href="#myModal" data-toggle="modal" ng-hide="isUserLoggedin()">כניסה</a>
+        <a class="navbar-brand spacer" href="#myModal" data-toggle="modal" ng-hide="isMenagerLoggedin()">כניסה</a>
       </li>
       <li class="nav-item">
-        <a class="navbar-brand spacer" href="#!/signup" target="_blank" ng-hide="isUserLoggedin()">הרשמה</a>
+        <a class="navbar-brand spacer" href="#!/signup" target="_blank" ng-hide="isMenagerLoggedin()">הרשמה</a>
       </li>
       <li class="nav-item">
-        <a class="navbar-brand spacer" href="#" target="#" ng-show="isUserLoggedin()">להוסיף מקלט לבעלי חיים</a>
+        <a class="navbar-brand spacer" href="#!/list" target="#" ng-show="isMenagerLoggedin()">להוסיף מקלט לבעלי חיים</a>
       </li>
       <li class="nav-item">
-        <a class="navbar-brand spacer" href="#" target="#" ng-show="isUserLoggedin()">להוסיף בעל חיים</a>
+        <a class="navbar-brand spacer" href="#!/newTenant" target="#" ng-show="isMenagerLoggedin()" ng-click="addTenant()">להוסיף בעל חיים</a>
       </li>
     </ul>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="navbar-brand leftspacer" href="#" target="# " ng-show="isUserLoggedin()">להתנתק</a>
+        <a class="navbar-brand leftspacer" href="#" target="# " ng-show="isMenagerLoggedin()">להתנתק</a>
       </li>
     </ul>
   </div>
@@ -52,19 +52,19 @@
           <div class="form-group">
             <label for="usrname">
               <span class="glyphicon glyphicon-user"></span> מייל</label>
-            <input type="text" class="form-control" id="email" placeholder="" ng-model="email">
+            <input type="text" class="form-control" id="inputEmail" placeholder="" ng-model="email">
           </div>
           <div class="form-group">
             <label for="psw">
               <span class="glyphicon glyphicon-eye-open"></span> סיסמה</label>
-            <input type="text" class="form-control" id="psw" placeholder="" ng-model="psw">
+            <input type="text" class="form-control" id="inputPsw" placeholder="" ng-model="psw">
           </div>
           <div class="checkbox">
             <label>
               <input type="checkbox" value="" checked> זכור אותי</label>
           </div>
-          <button type="submit" class="btn btn-success btn-block" ng-click="login()">
-            <span class="glyphicon glyphicon-off"></span> כניסה</button>
+          <button type="submit" class="btn btn-success btn-block" ng-click="login()" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> כניסה</button>
         </form>
         <p>שכחתה
           <a href="#">סיסמה</a>
@@ -95,6 +95,10 @@
 
 
 
+<br>
+<br>
+<br>
+<br>
 
 
 

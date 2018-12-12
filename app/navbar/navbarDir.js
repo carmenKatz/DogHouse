@@ -1,8 +1,9 @@
 app.directive("navbarShelter", function(){
     return {
         templateUrl: "app/navbar/navbar.html",
-        controller: "navbarCtrl",
-        controller: "loginCtrl"
+        controller: "loginCtrl",
+        controller: "navbarCtrl"
+       
         
     }
 })

@@ -7,12 +7,12 @@ app.factory("menager", function($q, $http) {
 
     function menager(plainMenager) {
         this.id = plainMenager.id;
-        this.fname = plainMenager.usrfnm;
-        this.lname = plainMenager.usrlnm;
+        this.fname = plainMenager.fname;
+        this.lname = plainMenager.lname;
         this.adr = plainMenager.adr;
         this.telefon = plainMenager.telefon;
         this.email = plainMenager.email;
-        this.pwd = plainMenager.pwd;
+        this.psw = plainMenager.psw;
     }
 
     // "id": 2,
@@ -25,11 +25,11 @@ app.factory("menager", function($q, $http) {
     // "email": "john@john.co.il",
     // "psw": "1111"
 
-    function login(email, pwd) {
+    function login(email, psw) {
         var async = $q.defer();
 
         var loginURL = "http://my-json-server.typicode.com/carmenKatz/DogHouse/menagers?email=" +
-            email + "&pwd=" + pwd;
+            email + "&psw=" + psw;
             
         $http.get(loginURL).then(function(response) {
             if (response.data.length > 0) {

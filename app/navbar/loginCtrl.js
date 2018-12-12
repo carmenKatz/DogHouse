@@ -7,24 +7,25 @@
 app.controller("loginCtrl", function($scope, $location, menager) {
 
 
-
+ $scope.email = "";
+    $scope.psw = "";
    
     
-    $scope.email = "jane@jane.co.il";
-    $scope.pwd = "1111";
+    // $scope.email = "jane@jane.co.il";
+    // $scope.psw = "1111";
 
     $scope.invalidLogin = false;
 
     $scope.login = function() {
         $scope.invalidLogin = false;
 
-        menager.login($scope.email, $scope.pwd).then(function() {
+        menager.login($scope.email, $scope.psw).then(function() {
             // success login
 
 
-            $("#myModal").modal("hide");
-            $("body").removeClass("modal-open");
-            $(".modal-backdrop").remove();
+            // $("#myModal").modal("hide");
+            //  $("body").removeClass("modal-open");
+            // $(".modal-backdrop").remove();
 
 
             

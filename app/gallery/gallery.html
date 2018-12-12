@@ -9,14 +9,17 @@
     <h1>דיירי המקום</h1>
   
   <div class="row">
-      <div class="col-sm-6 col-md-4 my-2" ng-repeat="tenant in tenants">
+      <div class=" my-2 shadow p-4 mb-4 bg-white" ng-repeat="tenant in tenants">
   <div class="card" style="width:400px">
-      <img class="card-img-top" ng-src="{{tenant.pic}}" alt="Card image">
+      <img class="card-img-top" ng-src="{{tenant.picUrl}}" alt="Card image">
       <div class="card-body">
-        <h4 class="card-title">{{tenant.name}}</h4>
+        <h4 class="card-title">  {{tenant.name}}</h4>
         <p class="card-text">{{tenant.des}}</p>
-        <a href="#" class="btn btn-primary" ng-click="delete()" ng-show="isUserLoggedin()">מחיקה</a>
+        <a href="#" class="btn btn-info" ng-click="" ng-hide="isUserLoggedin()" ng-click="">שאלו אותנו על {{tenant.name}}</a>
+        <a href="#" class="btn btn-primary"  ng-show="isUserLoggedin()" ng-click="delete()">מחיקה</a>
       </div>
     </div>
     </div>
     </div>
+
+    <!-- col-sm-6 col-md-4 -->
