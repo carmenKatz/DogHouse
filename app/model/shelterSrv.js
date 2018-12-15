@@ -44,7 +44,7 @@ app.factory("shelter", function($q, $http, menager) {
                     shelters[menagerId].push(newShelter);
                 }
                 wasEverLoaded[menagerId] = true;
-                async.resolve(tenants[menagerId]);
+                async.resolve(shelter[menagerId]);
             }, function(error) {
                 async.reject(error);
             });

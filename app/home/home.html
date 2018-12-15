@@ -10,29 +10,61 @@
 
 
 
-</main>
-<h1>בואו לפגוש החבר החדש שלכם</h1>
+<!--
+  //////////////////
+   <container class="content">
+<h4>בואו לפגוש החבר החדש שלכם</h4>
 
-<div class="container" ng-repet="shelter in shelters" ng-model="showShelter()">
+<div class="container" id="1" >
+<div class="container" ng-repet="shelter in shelters" ng-model="showShelter()"> 
     <h2></h2>
    
-    <div id="accordion">
+  <div id="accordion">
+
+
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" href="#collapseOne">
-              {{shelter.shname}}
+            צער בעלי חים - חיפה
           </a>
         </div>
         <div id="collapseOne" class="collapse show" data-parent="#accordion">
           <div class="card-body">
-              {{shelter.adr}} + " " + {{shelter.telefone}} + "" +  {{shelter.shname}}
+            כתובת: הה
+              "Hahistradut 120 Haifa",0504635977",
+              "direction": "אוטובוסים : 15, 1, 136", -->
+             <!-- {{shelter.adr}} + " " + {{shelter.telefone}} + "" +  {{shelter.shname}}+{{5+5}} 
           </div>
         </div>
       </div>
      
+           <div class="container" ng-repet="shelter in shelters" ng-model="showShelter()"> 
+          <h2></h2>
+         
+            <div class="card">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                     צער בעלי חים - תל אביב
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                   
+                כתובת בית המחסה: פרי עמל 1, אזור תעשייה עטרות, ירושלים
+                כתובת המרפאה: המוסכים 9, תלפיות, ירושלים
+                מס טלפון : 0504645977
+                תחבורה : "אוטובוסים : 15, 1, 136
+                  {{shelter.adr}} + " " + {{shelter.telefone}} + "" +  {{shelter.shname}}+{{5+5}}
+                </div>
+              </div>
+              </div>
+  </div>         
 
-<!-- </container>
-
-</main>
+    </container> --> 
 
 
+
+
+
+
+    
