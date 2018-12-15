@@ -6,13 +6,36 @@
 
 
       
+<div class="row">
+    <div id="right" class="col-sm-4" style="background-color:white;">
+
+     <img src="dog_puppy.jpg" class="mx-auto d-block" style="width:100%"> 
+     <img src="cat_puppy.jpg" class="mx-auto d-block" style="width:100%"> 
+    </div>
+
+    <div id="midle" class="col-sm-4 " >
+      <h3> צער בעלי חים - חיפה </h3>
+     
+      <h4>   כתובת: </h4>
+        <div> דרך משה דיין מפרץ חיפה</div>
+        <h4>   טלפון: </h4>
+        <div> 04-8729696</div>
+        <h4>   תחבורה: </h4>
+        <div> אוטובוסים : 15, 1, 136</div>
+    
+        <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+        <button type="button" class="btn btn-success btn-sm btn-block">Button 2</button>
+    </div>
+       
+    <div id="left" class="col-sm-4" style="background-color:white;"></div>
+  </div>
+  <br>
 
 
 
 
-<!--
-  //////////////////
-   <container class="content">
+
+   <!-- <container class="content">
 <h4>בואו לפגוש החבר החדש שלכם</h4>
 
 <div class="container" id="1" >
@@ -23,32 +46,31 @@
 
 
       <div class="card">
-        <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        <div class="card-header" ng-click="toggle=!toggle">
+          <a class="card-link" data-toggle="collapse" href="#collapseOne" >
             צער בעלי חים - חיפה
           </a>
         </div>
-        <div id="collapseOne" class="collapse show" data-parent="#accordion">
-          <div class="card-body">
-            כתובת: הה
+        <div id="collapseOne" class="collapse show" data-parent="#accordion" >
+          <div class="card-body" ng-show="toggle">
+            כתובת: 
               "Hahistradut 120 Haifa",0504635977",
-              "direction": "אוטובוסים : 15, 1, 136", -->
-             <!-- {{shelter.adr}} + " " + {{shelter.telefone}} + "" +  {{shelter.shname}}+{{5+5}} 
+              "direction": "אוטובוסים : 15, 1, 136", 
+          {{shelter.adr}} + " " + {{shelter.telefone}} + "" +  {{shelter.shname}}+{{5+5}} 
           </div>
         </div>
       </div>
      
-           <div class="container" ng-repet="shelter in shelters" ng-model="showShelter()"> 
-          <h2></h2>
+           
          
             <div class="card">
-              <div class="card-header">
-                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              <div class="card-header" ng-click="togle=!togle">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne" >
                      צער בעלי חים - תל אביב
                 </a>
               </div>
               <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body" ng-show="toggle">
                    
                 כתובת בית המחסה: פרי עמל 1, אזור תעשייה עטרות, ירושלים
                 כתובת המרפאה: המוסכים 9, תלפיות, ירושלים
@@ -60,8 +82,39 @@
               </div>
   </div>         
 
-    </container> --> 
+</container>  -->
 
+
+     <!-- <h3> צער בעלי חים - ירושלים </h3>
+       
+        <h4>   כתובת: </h4>
+          <div> דרך משה דיין מפרץ ירושלים</div>
+          <h4>   טלפון: </h4>
+          <div> 04-8729696</div>
+          <h4>   תחבורה: </h4>
+          <div> אוטובוסים : 15, 1, 136</div>
+      
+          <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+          <button type="button" class="btn btn-success btn-sm btn-block">Button 2</button>
+     
+
+
+    
+          <h3> צער בעלי חים - תל אביב </h3>
+         
+          <h4>   כתובת: </h4>
+            <div> דרך משה דיין מפרץ תל אביב</div>
+            <h4>   טלפון: </h4>
+            <div> 04-8729696</div>
+            <h4>   תחבורה: </h4>
+            <div> אוטובוסים : 15, 1, 136</div>
+        
+            <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+            <button type="button" class="btn btn-success btn-sm btn-block">Button 2</button>
+      -->
+    
+      <!-- <div class="container" ng-repet="shelter in shelters" ng-model="showShelter()" > 
+          <h2></h2> -->
 
 
 
