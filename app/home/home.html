@@ -7,27 +7,70 @@
 
       
 <div class="row">
-    <div id="right" class="col-sm-4" style="background-color:white;">
+    <div  class="col-sm-4 float-right" style="background-color:white;">
 
      <img src="dog_puppy.jpg" class="mx-auto d-block" style="width:100%"> 
      <img src="cat_puppy.jpg" class="mx-auto d-block" style="width:100%"> 
     </div>
+<!-- <container class=" col-sm-4" > -->
+    <div  class="col-sm-4 " ng-controller="loginCtrl" >
 
-    <div id="midle" class="col-sm-4 " >
-      <h3> צער בעלי חים - חיפה </h3>
-     
+      <div class="midle"> 
+      <h3 class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample"> צער בעלי חים - חיפה </h3>
+      <div class="collapse" id="collapseExample1">
+          <div class="card card-body"> 
       <h4>   כתובת: </h4>
         <div> דרך משה דיין מפרץ חיפה</div>
         <h4>   טלפון: </h4>
         <div> 04-8729696</div>
         <h4>   תחבורה: </h4>
         <div> אוטובוסים : 15, 1, 136</div>
-    
-        <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
-        <button type="button" class="btn btn-success btn-sm btn-block">Button 2</button>
-    </div>
+        <button type="button" class="btn btn-primary btn-sm btn-block">המפה</button>
+        <button type="button" class="btn btn-success btn-sm btn-block" ng-click="login()">הדיירים שלנו</button>
+      </div>
+      </div>
+      </div>
+
+
+      <br>
+      <br>
+      <div class="midle"> 
+    <h3 class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"> צער בעלי חים - ירושלים </h3>
+    <div class="collapse" id="collapseExample2">
+    <div class="card card-body">
+           <h4>   כתובת: </h4>
+      <div> דרך משה דיין מפרץ ירושלים</div>
+      <h4>   טלפון: </h4>
+      <div> 04-8729696</div>
+      <h4>   תחבורה: </h4>
+      <div> אוטובוסים : 15, 1, 136</div>
+  
+      <button type="button" class="btn btn-primary btn-sm btn-block">המפה</button>
+      <button type="button" class="btn btn-success btn-sm btn-block"> הדיירים שלנו</button> 
+    </div> 
+  </div>  
+</div>
+    <br>
+    <br>
+    <div class="midle"> 
+      <h3 class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"> צער בעלי חים - תל אביב </h3>
+      <div class="collapse" id="collapseExample3">
+      <div class="card card-body">  
+      <h4>   כתובת: </h4>
+        <div> דרך משה דיין מפרץ תל אביב</div>
+        <h4>   טלפון: </h4>
+        <div> 04-8729696</div>
+        <h4>   תחבורה: </h4>
+        <div> אוטובוסים : 15, 1, 136</div>
+         <button type="button" class="btn btn-primary btn-sm btn-block">המפה</button>
+        <button type="button" class="btn btn-success btn-sm btn-block"> הדיירים שלנו</button>
+      </div> 
+      </div>
+      </div>
+      </div>
+  <!-- </container> -->
        
-    <div id="left" class="col-sm-4" style="background-color:white;"></div>
+    <div  class="col-sm-4 float-left" style="background-color:white;"></div>
   </div>
   <br>
 
@@ -85,33 +128,7 @@
 </container>  -->
 
 
-     <!-- <h3> צער בעלי חים - ירושלים </h3>
-       
-        <h4>   כתובת: </h4>
-          <div> דרך משה דיין מפרץ ירושלים</div>
-          <h4>   טלפון: </h4>
-          <div> 04-8729696</div>
-          <h4>   תחבורה: </h4>
-          <div> אוטובוסים : 15, 1, 136</div>
-      
-          <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
-          <button type="button" class="btn btn-success btn-sm btn-block">Button 2</button>
-     
-
-
     
-          <h3> צער בעלי חים - תל אביב </h3>
-         
-          <h4>   כתובת: </h4>
-            <div> דרך משה דיין מפרץ תל אביב</div>
-            <h4>   טלפון: </h4>
-            <div> 04-8729696</div>
-            <h4>   תחבורה: </h4>
-            <div> אוטובוסים : 15, 1, 136</div>
-        
-            <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
-            <button type="button" class="btn btn-success btn-sm btn-block">Button 2</button>
-      -->
     
       <!-- <div class="container" ng-repet="shelter in shelters" ng-model="showShelter()" > 
           <h2></h2> -->

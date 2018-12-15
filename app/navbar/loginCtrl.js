@@ -23,9 +23,24 @@ app.controller("loginCtrl", function($scope, $location, menager) {
             // success login
 
 
-            // $("#myModal").modal("hide");
-            //  $("body").removeClass("modal-open");
-            // $(".modal-backdrop").remove();
+           
+
+            
+            $location.path("/gallery")
+        }, function(error) {
+            // failed login
+            $scope.invalidLogin = true;
+        })
+    }
+
+
+    $scope.public = function() {
+        $scope.invalidLogin = true;
+
+        menager.login($scope.email, $scope.psw).then(function() {
+            // without login
+
+
 
 
             
@@ -35,4 +50,6 @@ app.controller("loginCtrl", function($scope, $location, menager) {
             $scope.invalidLogin = true;
         })
     }
+
+
 });

@@ -73,7 +73,7 @@ app.factory("shelter", function($q, $http, menager) {
     // }
 
 
-    return shelter []
+    return shelter[];
 
         
         // getActiveMenagerTenant: getActiveMenagerTenant
