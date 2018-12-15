@@ -4,16 +4,35 @@
     
 <navbar-shelter></navbar-shelter>
 
-<h1>בואו לפגוש החבר החדש שלכם</h1>
-<container>
+
       
 
 
-<main>
 
 
 </main>
 <h1>בואו לפגוש החבר החדש שלכם</h1>
 
-</div>
-</container>
+<div class="container" ng-repet="shelter in shelters" ng-model="showShelter()">
+    <h2></h2>
+   
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              {{shelter.shname}}
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+              {{shelter.adr}} + " " + {{shelter.telefone}} + "" +  {{shelter.shname}}
+          </div>
+        </div>
+      </div>
+     
+
+<!-- </container>
+
+</main>
+
+
