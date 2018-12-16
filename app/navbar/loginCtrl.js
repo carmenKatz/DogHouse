@@ -9,7 +9,7 @@ app.controller("loginCtrl", function($scope, $location, menager) {
 
      $scope.email = "";
     $scope.psw = "";
-    $scope.menagerId="";
+    // $scope.menagerId="";
     
     // $scope.email = "jane@jane.co.il";
     // $scope.psw = "1111";
@@ -34,21 +34,21 @@ app.controller("loginCtrl", function($scope, $location, menager) {
 
 
 
-    $scope.public = function(val) {
-        $scope.invalidLogin = true;
-        $menagerId = val;
+    // $scope.public = function(val) {
+    //     $scope.invalidLogin = true;
+    //     $menagerId = val;
         
-        visitor.public($scope.menagerId).then(function() {
+    //     visitor.public($scope.menagerId).then(function() {
 
-            $location.path("/gallery")
+    //         $location.path("/gallery")
 
-        },
+    //     },
                          
-        function(error) {
-            // failed login
-            console.log = menagerId;
-        })
-    }
+    //     function(error) {
+    //         // failed login
+    //         console.log = menagerId;
+    //     })
+    // }
 
 
 });

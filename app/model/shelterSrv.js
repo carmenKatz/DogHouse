@@ -1,17 +1,17 @@
 app.factory("shelter", function($q, $http, menager) {
 
-    var shelters = {};
-    var wasEverLoaded = {};
+    // var shelters = {};
+    // var wasEverLoaded = {};
 
-    function shelter(plainShelter) {
+    // function shelter(plainShelter) {
         
-        this.name = plainShelter.shname;
+    //     this.name = plainShelter.shname;
        
-        this.adr = plainShelter.adr;
-        this.telefone = plainShelter.telefone;
-        this.direction = plainShelter.direction;
-        this.menagerId = plainTenant.menagerId;
-    }
+    //     this.adr = plainShelter.adr;
+    //     this.telefone = plainShelter.telefone;
+    //     this.direction = plainShelter.direction;
+    //     this.menagerId = plainTenant.menagerId;
+    // }
 
 
 
@@ -24,8 +24,8 @@ app.factory("shelter", function($q, $http, menager) {
 
 
 
-    function showShelter() {
-        var async = $q.defer();
+    // function showShelter() {
+    //     var async = $q.defer();
 
         // var menagerId = menager.getActiveMenager().id;
 
@@ -34,24 +34,24 @@ app.factory("shelter", function($q, $http, menager) {
         // if (wasEverLoaded[menagerId]) {
         //     async.resolve(shelter[menagerId]);
         // } else 
-        {
-            shelter[menagerId] = [];
-            var getShelterURL = "http://my-json-server.typicode.com/carmenKatz/DogHouse/shelters?menagerId=" + menagerId;
+    //     {
+    //         shelter[menagerId] = [];
+    //         var getShelterURL = "http://my-json-server.typicode.com/carmenKatz/DogHouse/shelters?menagerId=" + menagerId;
             
-            $http.get(getShelterURL).then(function(response) {
-                for (var i = 0; i < response.data.length; i++) {
-                    var newShelter = new shelter(response.data[i]);
-                    shelters[menagerId].push(newShelter);
-                }
-                wasEverLoaded[menagerId] = true;
-                async.resolve(shelter[menagerId]);
-            }, function(error) {
-                async.reject(error);
-            });
-        }
+    //         $http.get(getShelterURL).then(function(response) {
+    //             for (var i = 0; i < response.data.length; i++) {
+    //                 var newShelter = new shelter(response.data[i]);
+    //                 shelters[menagerId].push(newShelter);
+    //             }
+    //             wasEverLoaded[menagerId] = true;
+    //             async.resolve(shelter[menagerId]);
+    //         }, function(error) {
+    //             async.reject(error);
+    //         });
+    //     }
 
-        return async.promise;
-    }
+    //     return async.promise;
+    // }
 
 
     // function addTenant(name, description, ingredients, steps, imgUrl) {
@@ -73,7 +73,7 @@ app.factory("shelter", function($q, $http, menager) {
     // }
 
 
-    return shelter[];
+    // return shelter[];
 
         
         // getActiveMenagerTenant: getActiveMenagerTenant

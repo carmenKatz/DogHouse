@@ -53,9 +53,61 @@ app.factory("tenant", function($q, $http, menager) {
 
         return async.promise;
     }
+ 
+
+    return {
+        getActiveMenagerTenant: getActiveMenagerTenant
+    //     createRecipe: createRecipe
+    }
 
 
-    // function addTenant(name, description, ingredients, steps, imgUrl) {
+    function getTenantByManeger(manegerId) {
+        var async = $q.defer();
+
+        var menagerId = menager.getActiveMenager().id;
+
+        // This is a hack since we don't really have a persistant server.
+        // So I want to get all recipes only once.
+        if (wasEverLoaded[menagerId]) {
+            async.resolve(tenant[menagerId]);
+        } else {
+            tenants[menagerId] = [];
+            var getTenantURL = "http://my-json-server.typicode.com/carmenKatz/DogHouse/tenants?menagerId=" + menagerId;
+            
+            $http.get(getTenantURL).then(function(response) {
+                for (var i = 0; i < response.data.length; i++) {
+                    var newTenant = new tenant(response.data[i]);
+                    tenants[menagerId].push(newTenant);
+                }
+                wasEverLoaded[menagerId] = true;
+                async.resolve(tenants[menagerId]);
+            }, function(error) {
+                async.reject(error);
+            });
+        }
+
+        return async.promise;
+    }
+
+
+    
+
+    return {
+        getTenantByManeger: getTenantByManeger
+    //     createRecipe: createRecipe
+    }
+
+
+
+
+
+})
+
+
+
+
+
+// function addTenant(name, description, ingredients, steps, imgUrl) {
     //     var async = $q.defer();
 
     //     var userId = user.getActiveUser().id;
@@ -73,9 +125,3 @@ app.factory("tenant", function($q, $http, menager) {
     //     return async.promise;
     // }
 
-
-    return {
-        getActiveMenagerTenant: getActiveMenagerTenant
-    //     createRecipe: createRecipe
-    }
-})

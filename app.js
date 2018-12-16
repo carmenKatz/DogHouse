@@ -19,5 +19,9 @@ app.config(function($routeProvider) {
     }).when("/new" , {
         templateUrl: "app/gallery/newTenant.html",
         controller: "newTenantCtrl"
+
+    }).when("/gallery/:manegerId",{
+        templateUrl: "app/gallery/gallery.html",
+        controller: "publicGalleryCtrl"
     })
 })

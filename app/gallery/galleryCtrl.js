@@ -11,5 +11,16 @@ app.controller("galleryCtrl", function($scope, tenant, menager, $location) {
         $scope.tenants = tenants;
     }, function(error) {
         
-    })
+    });
+
+
+    // $scope.public = function(val){
+    //     $scope.tenant.menageId = val;
+    //     $scope.tenants = tenants;
+    //     $location.path("/gallery");
+
+    // }, function(error) {
+        
+    // })
+
 })
