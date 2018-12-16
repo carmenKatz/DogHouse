@@ -1,4 +1,4 @@
-app.factory("tenant", function($q, $http, menager) {
+app.factory("tenant", function($q, $http, menager,) {
 
     var tenants = {};
     var wasEverLoaded = {};
@@ -64,7 +64,8 @@ app.factory("tenant", function($q, $http, menager) {
     function getTenantByManeger(manegerId) {
         var async = $q.defer();
 
-        var menagerId = menager.getActiveMenager().id;
+
+        // var menagerId = menager.getActiveMenager().id;
 
         // This is a hack since we don't really have a persistant server.
         // So I want to get all recipes only once.
