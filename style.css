@@ -19,9 +19,8 @@ body {
 
  .midle {
       background-color: rgb(241, 241, 241);
-      /* float: right; */
-  
+      
       border: 12px;
-      /* border-color: rgb(181, 233, 233); */
+      
       border-color: black;
   }

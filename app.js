@@ -13,15 +13,17 @@ app.config(function($routeProvider) {
         templateUrl: "app/gallery/gallery.html",
         controller: "galleryCtrl"
         
-    }).when("/list",{
-        templateUrl: "app/list/list.html"
-
-    }).when("/new" , {
-        templateUrl: "app/gallery/newTenant.html",
-        controller: "newTenantCtrl"
-
+  
     }).when("/gallery/:manegerId",{
         templateUrl: "app/gallery/gallery.html",
         controller: "publicGalleryCtrl"
     })
 })
+
+
+  // }).when("/list",{
+    //     templateUrl: "app/list/list.html"
+
+    // }).when("/new" , {
+    //     templateUrl: "app/gallery/newTenant.html",
+    //     controller: "newTenantCtrl"

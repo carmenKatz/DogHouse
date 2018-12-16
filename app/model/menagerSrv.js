@@ -1,4 +1,4 @@
-app.factory("menager", function($q, $http, $rooteParams) {
+app.factory("menager", function($q, $http, ) {
 
     
 
