@@ -1,4 +1,4 @@
-app.factory("tenant", function($q, $http, menager,) {
+app.factory("tenant", function($q, $http, menager,$routeParams) {
 
     var tenants = {};
     var wasEverLoaded = {};

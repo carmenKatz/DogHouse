@@ -7,5 +7,6 @@ app.controller("navbarCtrl", function($scope, menager, $location){
     $scope.logout = function() {
         menager.logout();
         $location.path("/");
+        location.reload(true);
     }
 });
